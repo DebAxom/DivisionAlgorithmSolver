@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Maths Cheater</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <style>
+        *,*::before,*::after{margin:0px;padding:0px;box-sizing:border-box;outline:none;font-family:Calibri;}
+        html{font-size:62.5%;}
+        body{font-size:1.6rem;}
+        #root{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1,h3{
+            margin: 1rem;
+        }
+        #steps{
+            padding: 1rem;
+            border: 1px solid black;
+        }
+        input{
+            padding: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div id="root">
+        <h1>Euclid's Divison Algorithm</h1>
+        <input type="number" id="numx" placeholder="Type the value of number X">
+        <input type="number" id="numy" placeholder="Type the value of number Y">
+        <input type="button" onclick="Calculate()" value="Calculate">
+        <h3>Steps:</h3>
+        <p id="steps"></p>
+        <script src="index.js"></script>
+    </div> 
+</body>
+</html>
