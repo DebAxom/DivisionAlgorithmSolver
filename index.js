@@ -1,7 +1,8 @@
-const stepsDiv = document.getElementById('steps');
+var stepsDiv = document.getElementById('steps');
 
 function printSteps(dividend,divisor,quotient,remainder){
-    stepsDiv.innerHTML+=`${dividend} = ${divisor} x ${quotient} + ${remainder}`;
+    //stepsDiv.innerHTML+=`${dividend} = ${divisor} x ${quotient} + ${remainder}`;
+    stepsDiv.innerHTML+=dividend + " = "+ divisor + " x " + quotient + " + " + remainder;
     stepsDiv.innerHTML+="<br>";
 }
 
